@@ -1,5 +1,6 @@
 <script setup>
 import SideBar from "./components/SideBar.vue";
+import Loader from "@/components/Loader.vue";
 import ArrowRightThinIcon from "vue-material-design-icons/ArrowRightThin.vue";
 </script>
 
@@ -53,62 +54,37 @@ import ArrowRightThinIcon from "vue-material-design-icons/ArrowRightThin.vue";
           </div>
         </div>
         <div class="card card-skeleton">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="38"
-            height="38"
-            viewBox="0 0 38 38"
-          >
-            <defs>
-              <linearGradient
-                x1="8.042%"
-                y1="0%"
-                x2="65.682%"
-                y2="23.865%"
-                id="a"
-              >
-                <stop stop-color="#fff" stop-opacity="0" offset="0%" />
-                <stop stop-color="#fff" stop-opacity=".631" offset="63.146%" />
-                <stop stop-color="#fff" offset="100%" />
-              </linearGradient>
-            </defs>
-            <g fill="none" fill-rule="evenodd">
-              <g transform="translate(1 1)">
-                <path
-                  d="M36 18c0-9.94-8.06-18-18-18"
-                  id="Oval-2"
-                  stroke="url(#a)"
-                  stroke-width="2"
-                >
-                  <animateTransform
-                    attributeName="transform"
-                    type="rotate"
-                    from="0 18 18"
-                    to="360 18 18"
-                    dur="0.9s"
-                    repeatCount="indefinite"
-                  />
-                </path>
-                <circle fill="#fff" cx="36" cy="18" r="1">
-                  <animateTransform
-                    attributeName="transform"
-                    type="rotate"
-                    from="0 18 18"
-                    to="360 18 18"
-                    dur="0.9s"
-                    repeatCount="indefinite"
-                  />
-                </circle>
-              </g>
-            </g>
-          </svg>
+          <Loader />
         </div>
       </section>
 
       <section class="second-section">
-        <!-- <div class="control-panel">
-          <div>Control panel</div>
-          <div>photos</div>
+        <div class="control-panel">
+          <div class="head">
+            <div class="title">Control panel</div>
+            <div class="avatars">
+              <div class="avatar">
+                <img
+                  src="https://api.dicebear.com/6.x/lorelei/svg?seed=Toby"
+                  alt="avatar"
+                />
+              </div>
+              <div class="avatar">
+                <img
+                  src="https://api.dicebear.com/6.x/lorelei/svg?seed=Toby"
+                  alt="avatar"
+                />
+              </div>
+              <div class="avatar">
+                <img
+                  src="https://api.dicebear.com/6.x/lorelei/svg?seed=Toby"
+                  alt="avatar"
+                />
+              </div>
+              <div class="avatar">+3</div>
+            </div>
+          </div>
+          <input type="search" placeholder="Enter your search request..." />
         </div>
         <div>
           <div class="content-1">
@@ -117,10 +93,113 @@ import ArrowRightThinIcon from "vue-material-design-icons/ArrowRightThin.vue";
           </div>
           <div class="content-2">
             <ul>
-              <li>Cozy Home Funishings</li>
+              <li>
+                <div class="account-avatar">
+                  <div class="avatar">C</div>
+                  <div class="account">
+                    <span class="emphasis">Cozy Home Funishings</span>
+                    <small class="muted">520 items</small>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="emphasis">$11.190,00</span>
+                  <small class="muted">Mon, Oct 14</small>
+                </div>
+              </li>
+              <li>
+                <div class="account-avatar">
+                  <div class="avatar">C</div>
+                  <div class="account">
+                    <span class="emphasis">Cozy Home Funishings</span>
+                    <small class="muted">520 items</small>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="emphasis">$11.190,00</span>
+                  <small class="muted">Mon, Oct 14</small>
+                </div>
+              </li>
+              <li>
+                <div class="account-avatar">
+                  <div class="avatar">C</div>
+                  <div class="account">
+                    <span class="emphasis">Cozy Home Funishings</span>
+                    <small class="muted">520 items</small>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="emphasis">$11.190,00</span>
+                  <small class="muted">Mon, Oct 14</small>
+                </div>
+              </li>
+              <li>
+                <div class="account-avatar">
+                  <div class="avatar">C</div>
+                  <div class="account">
+                    <span class="emphasis">Cozy Home Funishings</span>
+                    <small class="muted">520 items</small>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="emphasis">$11.190,00</span>
+                  <small class="muted">Mon, Oct 14</small>
+                </div>
+              </li>
+              <li>
+                <div class="account-avatar">
+                  <div class="avatar">C</div>
+                  <div class="account">
+                    <span class="emphasis">Cozy Home Funishings</span>
+                    <small class="muted">520 items</small>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="emphasis">$11.190,00</span>
+                  <small class="muted">Mon, Oct 14</small>
+                </div>
+              </li>
+              <li>
+                <div class="account-avatar">
+                  <div class="avatar">C</div>
+                  <div class="account">
+                    <span class="emphasis">Cozy Home Funishings</span>
+                    <small class="muted">520 items</small>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="emphasis">$11.190,00</span>
+                  <small class="muted">Mon, Oct 14</small>
+                </div>
+              </li>
+              <li>
+                <div class="account-avatar">
+                  <div class="avatar">C</div>
+                  <div class="account">
+                    <span class="emphasis">Cozy Home Funishings</span>
+                    <small class="muted">520 items</small>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="emphasis">$11.190,00</span>
+                  <small class="muted">Mon, Oct 14</small>
+                </div>
+              </li>
+              <li>
+                <div class="account-avatar">
+                  <div class="avatar">C</div>
+                  <div class="account">
+                    <span class="emphasis">Cozy Home Funishings</span>
+                    <small class="muted">520 items</small>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="emphasis">$11.190,00</span>
+                  <small class="muted">Mon, Oct 14</small>
+                </div>
+              </li>
             </ul>
           </div>
-        </div> -->
+        </div>
       </section>
     </div>
   </main>
@@ -135,7 +214,7 @@ main {
     padding-left: 130px;
     height: 100vh;
     width: 100%;
-    gap: 2em;
+    gap: 1em;
 
     section.first-section {
       width: 65%;
@@ -240,6 +319,125 @@ main {
         place-content: center;
       }
     }
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: column;
+
+    .control-panel {
+      margin-bottom: 3em;
+    }
+
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5em;
+      .title {
+        font-size: 20pt;
+      }
+      .avatars {
+        display: flex;
+        .avatar {
+          width: 45px;
+          height: 45px;
+          border: 3px solid #fff;
+          background-color: #ccc;
+          border-radius: 50%;
+          margin-left: -18px;
+
+          &:last-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+          }
+        }
+      }
+    }
+    input {
+      width: 100%;
+      border-radius: 2em;
+      outline: none;
+      border: none;
+      background-color: #eee;
+      font-size: 12pt;
+      padding: 0.9em 2em;
+    }
+  }
+
+  .content-1 {
+    div {
+      font-weight: bold;
+    }
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 1em;
+  }
+
+  .content-2 {
+    overflow-y: auto;
+    max-height: 375px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      //   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #ccc;
+    }
+
+    ul {
+      margin-right: 10px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .account-avatar {
+          display: flex;
+          gap: 1em;
+          align-items: center;
+        }
+
+        .avatar {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          background-color: #eee;
+          display: grid;
+          place-content: center;
+          font-weight: bold;
+        }
+
+        .account,
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.4em;
+        }
+
+        .info {
+          text-align: right;
+        }
+
+        .emphasis {
+          font-weight: bold;
+          font-size: 10pt;
+        }
+        .muted {
+          color: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+    padding-top: 1.5em;
   }
 }
 </style>

@@ -41,6 +41,7 @@ import CogIcon from "vue-material-design-icons/Cog.vue";
 
 <style scoped>
 aside {
+  position: fixed;
   padding: 2em;
   height: 100vh;
   display: flex;
@@ -63,7 +64,7 @@ aside {
       position: absolute;
       left: 35%;
       top: 34%;
-      background-color: limegreen;
+      background-color: chartreuse;
       animation: animelogo 4s infinite;
     }
   }
@@ -91,6 +92,18 @@ aside {
     height: 45px;
     border: 1px solid rgba(0, 0, 0, 0.6);
     border-radius: 50%;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: rgb(255, 118, 118);
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      border-radius: 50%;
+    }
   }
 }
 @keyframes animelogo {
